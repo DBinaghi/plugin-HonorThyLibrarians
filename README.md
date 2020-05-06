@@ -3,7 +3,7 @@
 ## Description
 Omeka Classic plugin that creates public page to give credit to people who have added or edited items
 
-The page will list all librarians, with number of pages contributed and last contribution date. The page can be customized with messages before and after the table.
+The page will list all librarians, with number of Items contributed and last contribution date. The page can be customized with messages before and after the table.
 
 ## Installation
 Uncompress files and rename plugin folder "HonorThyLibrarians".
