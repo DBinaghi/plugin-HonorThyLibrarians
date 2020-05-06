@@ -13,7 +13,7 @@ echo head(); ?>
 <div id="primary">
 	<?php 
 		echo "<h1>" . __(get_option('honor_thy_librarians_page_title')) . "</h1>";
-		
+
 		echo "<p>" . get_option('honor_thy_librarians_pre_text') . "</p>";
 	?> 
 	
@@ -34,7 +34,13 @@ echo head(); ?>
 				$sql .= " LEFT OUTER JOIN " . $db->prefix . "users b";
 				$sql .= " ON a.owner_id = b.id";
 				$sql .= " GROUP BY b.id";
-				$sql .= " ORDER BY b.name";
+				if (get_option('honor_thy_librarians_sort_order') == 'count') {
+					$sql .= " ORDER BY total DESC, b.name ASC";
+				} elseif (get_option('honor_thy_librarians_sort_order') == 'date') {
+					$sql .= " ORDER BY lastdate DESC, b.name ASC";
+				} else {
+					$sql .= " ORDER BY b.name";
+				}
 
 				$librarians = $db->query($sql)->fetchall();
 				$key = 0;

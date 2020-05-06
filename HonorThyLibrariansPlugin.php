@@ -10,10 +10,10 @@
 	 */
 
 	// Define constants that set default options
-	define('HONOR_THY_LIBRARIANS_PAGE_PATH', 'librarians/');
-	define('HONOR_THY_LIBRARIANS_PAGE_TITLE', __('Librarians'));
-	define('HONOR_THY_LIBRARIANS_PRE_TEXT', __('The following people have contributed to this website.'));
-	define('HONOR_THY_LIBRARIANS_POST_TEXT', __('We want to thank them all very much for their help and support.'));
+	define('HONOR_THY_LIBRARIANS_PAGE_PATH',	'librarians/');
+	define('HONOR_THY_LIBRARIANS_PAGE_TITLE', 	__('Librarians'));
+	define('HONOR_THY_LIBRARIANS_PRE_TEXT',		__('The following people have contributed to this website.'));
+	define('HONOR_THY_LIBRARIANS_POST_TEXT',	__('We want to thank them all very much for their help and support.'));
 
 	class HonorThyLibrariansPlugin extends Omeka_Plugin_AbstractPlugin
 	{
@@ -35,10 +35,11 @@
 		public function hookInstall() 
 		{
 			// Set the url to the public page as a url that can be changed
-			set_option('honor_thy_librarians_page_path', HONOR_THY_LIBRARIANS_PAGE_PATH);
-			set_option('honor_thy_librarians_page_title', HONOR_THY_LIBRARIANS_PAGE_TITLE);
-			set_option('honor_thy_librarians_pre_text', HONOR_THY_LIBRARIANS_PRE_TEXT);
-			set_option('honor_thy_librarians_post_text', HONOR_THY_LIBRARIANS_POST_TEXT);
+			set_option('honor_thy_librarians_page_path',	HONOR_THY_LIBRARIANS_PAGE_PATH);
+			set_option('honor_thy_librarians_page_title',	HONOR_THY_LIBRARIANS_PAGE_TITLE);
+			set_option('honor_thy_librarians_pre_text',		HONOR_THY_LIBRARIANS_PRE_TEXT);
+			set_option('honor_thy_librarians_post_text', 	HONOR_THY_LIBRARIANS_POST_TEXT);
+			set_option('honor_thy_librarians_sort_order', 	'name');
 		}
 
 		public function hookUninstall()
@@ -47,6 +48,7 @@
 			delete_option('honor_thy_librarians_page_title');
 			delete_option('honor_thy_librarians_pre_text');
 			delete_option('honor_thy_librarians_post_text');
+			delete_option('honor_thy_librarians_sort_order');
 		}
 
 		public function hookInitialize()
@@ -81,10 +83,11 @@
 		public function hookConfig($args)
 		{
 			$post = $args['post'];
-			set_option('honor_thy_librarians_page_path', $post['page_path']);
-			set_option('honor_thy_librarians_page_title', $post['page_title']);
-			set_option('honor_thy_librarians_pre_text', $post['pre_text']);
-			set_option('honor_thy_librarians_post_text', $post['post_text']);
+			set_option('honor_thy_librarians_page_path',	$post['htl_page_path']);
+			set_option('honor_thy_librarians_page_title',	$post['htl_page_title']);
+			set_option('honor_thy_librarians_pre_text',		$post['htl_pre_text']);
+			set_option('honor_thy_librarians_post_text',	$post['htl_post_text']);
+			set_option('honor_thy_librarians_sort_order', 	$post['htl_sort_order']);
 		}
 
 		public function filterPublicNavigationMain($nav) 
