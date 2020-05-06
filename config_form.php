@@ -13,6 +13,7 @@ $htl_page_title = get_option('honor_thy_librarians_page_title');
 $htl_pre_text   = get_option('honor_thy_librarians_pre_text');
 $htl_post_text  = get_option('honor_thy_librarians_post_text');
 $htl_sort_order = get_option('honor_thy_librarians_sort_order');
+$htl_use_css	= get_option('honor_thy_librarians_use_css');
 $view       	= get_view();
 ?>
 
@@ -77,5 +78,17 @@ $view       	= get_view();
 			<?php echo __('The order librarians will be sorted on.') ?>
 		</p>
 		<?php echo $view->formSelect('htl_sort_order', $htl_sort_order, array(), array('name' => __('Name'), 'count' => __('Contributions'), 'date' => __('Last contribution date'))); ?>
+	</div>
+</div>
+
+<div class="field">
+	<div class="two columns alpha">
+		<?php echo $view->formLabel('htl_use_css', __('Style table with CSS')); ?>
+	</div>
+	<div class="inputs five columns omega">
+		<p class="explanation">
+			<?php echo __('If checked, will apply plugin css stylesheet to table.') ?>
+		</p>
+		<?php echo $view->formCheckbox('htl_use_css', $htl_use_css, null, array('1', '0')); ?>
 	</div>
 </div>

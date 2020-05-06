@@ -1,7 +1,7 @@
 # Translation for the Honor Thy Librarians plugin for Omeka.
 # Copyright (C) 2018 Daniele Binaghi
 # This file is distributed under the same license as the Omeka package.
-# Daniele Binaghi <admin@bitoteko.it>, 2018
+# Daniele Binaghi <admin@bitoteko.it>, 2018-2020
 #
 msgid ""
 msgstr ""
@@ -17,62 +17,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: config_form.php:19
+#: config_form.php:20
 msgid "Page settings"
 msgstr "Paĝaj agordoj"
 
-#: config_form.php:23
+#: config_form.php:24
 msgid "Page path"
 msgstr "Paĝa dosierindiko"
 
-#: config_form.php:27
+#: config_form.php:28
 msgid "The path to the page listing the librarians. For example, if your site is hosted at <code>http://my-omeka-site.org/</code>, and the value of this field is <code>librarians/</code>, then your page will be displayed at <code>http://my-omeka-site.org/librarians/</code>."
 msgstr "La dosierindiko al la paĝo listiganta la bibliotekistojn. Ekzemple, se via retejo gastas ĉe <code>http://mia-retejo-omeka.org/</code>, kaj la valoro de tiu ĉi kampo estas <code>bibliotekistoj/</code>, la paĝo montriĝos ĉe <code>http://mia-retejo-omeka.org/bibliotekistoj/</code>."
 
-#: config_form.php:35
+#: config_form.php:36
 msgid "Page title"
 msgstr "Paĝa titolo"
 
-#: config_form.php:39
+#: config_form.php:40
 msgid "The title that will display on the librarians page and in the main site navigation."
 msgstr "La titolo, kiu montriĝos ĉe la bibliotekista paĝo kaj ĉe la ĉefa reteja menuo."
 
-#: config_form.php:47
+#: config_form.php:48
 msgid "Pre display text"
 msgstr "Komenca teksto"
 
-#: config_form.php:51
+#: config_form.php:52
 msgid "The text that will display before the table of librarians."
 msgstr "La teksto, kiu montriĝos antaŭ la tabelo de bibliotekistoj."
 
-#: config_form.php:59
+#: config_form.php:60
 msgid "Post display text"
 msgstr "Fina teksto"
 
-#: config_form.php:63
+#: config_form.php:64
 msgid "The text that will display after the table of librarians."
 msgstr "La teksto, kiu montriĝos post la tabelo de bibliotekistoj."
 
-#: HonorThyLibrarian.php:13
+
+#: config_form.php:70
+msgid "Table settings"
+msgstr "Tabelaj agordoj"
+
+#: config_form.php:74
+msgid "Sort order"
+msgstr "Ordigo"
+
+#: config_form.php:78
+msgid "The order librarians will be sorted on."
+msgstr "Ordo laŭ kiu bibliotekistoj estos montritaj."
+
+#: config_form.php:80
+msgid "Name"
+msgstr "Nomo"
+
+#: config_form.php:80
+msgid "Contributions"
+msgstr "Kontribuojn"
+
+#: config_form.php:80
+#: index.php:25
+msgid "Last contribution date"
+msgstr "Lasta kontribua dato"
+
+#: config_form.php:86
+msgid "Use custom CSS"
+msgstr "Uzu propran CSS"
+
+#: config_form.php:90
+msgid "If checked, will apply plugin css stylesheet to table."
+msgstr "Se markita, propra CSS estos uzita por la tabelo."
+
+#: HonorThyLibrarian.php:14
 msgid "Librarians"
 msgstr "Bibliotekistoj"
 
-#: HonorThyLibrarian.php:14
+#: HonorThyLibrarian.php:15
 msgid "The following people have contributed to this website."
 msgstr "Tiuj ĉi homoj kontribuis al tiu ĉi retejo."
 
-#: HonorThyLibrarian.php:15
+#: HonorThyLibrarian.php:16
 msgid "We want to thank them all very much for their help and support."
 msgstr "Ni deziras danki al ili ĉiuj pro ilia helpo kaj subteno."
 
-#: index.php:22
+#: index.php:23
 msgid "Librarian"
 msgstr "Bibliotekist(in)o"
 
-#: index.php:23
+#: index.php:24
 msgid "Items added/edited"
 msgstr "Dokumentoj aldonitaj/redaktitaj"
 
-#: index.php:50
+#: index.php:57
 msgid "Click to see all contributions by this librarian"
 msgstr "Alklaku por vidi ĉiujn kontribuojn el tiu ĉi homo"

@@ -20,9 +20,9 @@ echo head(); ?>
 	<table id="librarians">
 		<thead>
 			<tr>
-				<th class="even"><?php echo __('Librarian') ?></th>
-				<th class="even" style="text-align: center"><?php echo __('Items added/edited') ?></th>
-				<th class="even" style="text-align: center"><?php echo __('Last contribution date') ?></th>
+				<th><?php echo __('Librarian') ?></th>
+				<th style="text-align: center"><?php echo __('Items added/edited') ?></th>
+				<th style="text-align: center"><?php echo __('Last contribution date') ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -53,8 +53,8 @@ echo head(); ?>
 						'submit_search' => 'Search')
 					);
 					// Create the table that displays the librarians
-					echo "<tr class='item " . (++$key%2 == 1 ? "odd" : "even") . "'>";
-					echo "<td><a href='" . $search_link ."' title='" . __("click to see all contributions by this librarian") . "'>" . $librarian['name'] . "</a></td>";
+					echo "<tr class='" . (++$key%2 == 1 ? "odd" : "even") . "'>";
+					echo "<td><a href='" . $search_link ."' title='" . __("Click to see all contributions by this librarian") . "'>" . $librarian['name'] . "</a></td>";
 					echo "<td style='text-align: right'>" . $librarian['total'] . "</td>";
 					echo "<td style='text-align: right'>" . format_date($librarian['lastdate']) . "</td>";
 					echo "</tr>\n";

@@ -25,7 +25,8 @@
 			'initialize',
 			'define_routes',
 			'config_form',
-			'config'
+			'config',
+			'public_head'
 		);
 
 		protected $_filters = array (
@@ -40,6 +41,7 @@
 			set_option('honor_thy_librarians_pre_text',		HONOR_THY_LIBRARIANS_PRE_TEXT);
 			set_option('honor_thy_librarians_post_text', 	HONOR_THY_LIBRARIANS_POST_TEXT);
 			set_option('honor_thy_librarians_sort_order', 	'name');
+			set_option('honor_thy_librarians_use_css', 		0);
 		}
 
 		public function hookUninstall()
@@ -49,6 +51,7 @@
 			delete_option('honor_thy_librarians_pre_text');
 			delete_option('honor_thy_librarians_post_text');
 			delete_option('honor_thy_librarians_sort_order');
+			delete_option('honor_thy_librarians_use_css');
 		}
 
 		public function hookInitialize()
@@ -88,8 +91,16 @@
 			set_option('honor_thy_librarians_pre_text',		$post['htl_pre_text']);
 			set_option('honor_thy_librarians_post_text',	$post['htl_post_text']);
 			set_option('honor_thy_librarians_sort_order', 	$post['htl_sort_order']);
+			set_option('honor_thy_librarians_use_css',	 	$post['htl_use_css']);
 		}
 
+		public function hookPublicHead()
+		{
+			if (get_option('honor_thy_librarians_use_css')) {
+				queue_css_file('honor-thy-librarians');
+			}
+		}
+		
 		public function filterPublicNavigationMain($nav) 
 		{
 			$nav[] = array(

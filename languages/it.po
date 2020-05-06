@@ -17,62 +17,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: config_form.php:19
+#: config_form.php:20
 msgid "Page settings"
 msgstr "Configurazione della pagina"
 
-#: config_form.php:23
+#: config_form.php:24
 msgid "Page path"
 msgstr "Percorso della pagina"
 
-#: config_form.php:27
+#: config_form.php:28
 msgid "The path to the page listing the librarians. For example, if your site is hosted at <code>http://my-omeka-site.org/</code>, and the value of this field is <code>librarians/</code>, then your page will be displayed at <code>http://my-omeka-site.org/librarians/</code>."
 msgstr "Il percorso della pagina che presenta la lista dei bibliotecari. Per esempio, se il sito è ospitato presso <code>http://mio-sito-omeka.org/</code>, e il valore di questo campo è <code>bibliotecari/</code>, allora la pagina verrà mostrata all'indirizzo <code>http://mio-sito-omeka.org/bibliotecari/</code>."
 
-#: config_form.php:35
+#: config_form.php:36
 msgid "Page title"
 msgstr "Titolo della pagina"
 
-#: config_form.php:39
+#: config_form.php:40
 msgid "The title that will display on the librarians page and in the main site navigation."
 msgstr "Il titolo che verrà mostrato nella pagina dei bibliotecari e nel menù principale del sito."
 
-#: config_form.php:47
+#: config_form.php:48
 msgid "Pre display text"
 msgstr "Testo iniziale"
 
-#: config_form.php:51
+#: config_form.php:52
 msgid "The text that will display before the table of librarians."
 msgstr "Il testo che verrà mostrato prima della tabella dei bibliotecari."
 
-#: config_form.php:59
+#: config_form.php:60
 msgid "Post display text"
 msgstr "Testo finale"
 
-#: config_form.php:63
+#: config_form.php:64
 msgid "The text that will display after the table of librarians."
 msgstr "Il testo che verrà mostrato dopo la tabella dei bibliotecari."
 
-#: HonorThyLibrarian.php:13
+#: config_form.php:70
+msgid "Table settings"
+msgstr "Impostazioni tabella"
+
+#: config_form.php:74
+msgid "Sort order"
+msgstr "Ordinamento"
+
+#: config_form.php:78
+msgid "The order librarians will be sorted on."
+msgstr "L'ordine in base al quale verranno mostrati i bibliotecari."
+
+#: config_form.php:80
+msgid "Name"
+msgstr "Nome"
+
+#: config_form.php:80
+msgid "Contributions"
+msgstr "Contributi"
+
+#: config_form.php:80
+#: index.php:25
+msgid "Last contribution date"
+msgstr "Data ultimo contributo"
+
+#: config_form.php:86
+msgid "Use custom CSS"
+msgstr "Usa CSS personalizzato"
+
+#: config_form.php:90
+msgid "If checked, will apply plugin css stylesheet to table."
+msgstr "Se selezionata, il foglio di stile css del plugin verrà applicato alla tabella."
+
+#: HonorThyLibrarian.php:14
 msgid "Librarians"
 msgstr "Bibliotecari"
 
-#: HonorThyLibrarian.php:14
+#: HonorThyLibrarian.php:15
 msgid "The following people have contributed to this website."
 msgstr "Le seguenti persone hanno contribuito a questo sito web."
 
-#: HonorThyLibrarian.php:15
+#: HonorThyLibrarian.php:16
 msgid "We want to thank them all very much for their help and support."
 msgstr "Desideriamo ringraziarle tutte per il loro aiuto e supporto."
 
-#: index.php:22
+#: index.php:23
 msgid "Librarian"
 msgstr "Bibliotecario/a"
 
-#: index.php:23
+#: index.php:24
 msgid "Items added/edited"
 msgstr "Elementi aggiunti/modificati"
 
-#: index.php:50
+#: index.php:57
 msgid "Click to see all contributions by this librarian"
 msgstr "Clicca per vedere tutti i contributi di questo bibliotecario"
