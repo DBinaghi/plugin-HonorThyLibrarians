@@ -1,0 +1,78 @@
+# Translation for the Honor Thy Librarians plugin for Omeka.
+# Copyright (C) 2018 Daniele Binaghi
+# This file is distributed under the same license as the Omeka package.
+# Daniele Binaghi <admin@bitoteko.it>, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Honor Thy Librarians\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-08 11:54+0200\n"
+"PO-Revision-Date: 2020-05-06 12:06+0200\n"
+"Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
+"Language-Team: Esperanto\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: config_form.php:19
+msgid "Page settings"
+msgstr "Paĝaj agordoj"
+
+#: config_form.php:23
+msgid "Page path"
+msgstr "Paĝa dosierindiko"
+
+#: config_form.php:27
+msgid "The path to the page listing the librarians. For example, if your site is hosted at <code>http://my-omeka-site.org/</code>, and the value of this field is <code>librarians/</code>, then your page will be displayed at <code>http://my-omeka-site.org/librarians/</code>."
+msgstr "La dosierindiko al la paĝo listiganta la bibliotekistojn. Ekzemple, se via retejo gastas ĉe <code>http://mia-retejo-omeka.org/</code>, kaj la valoro de tiu ĉi kampo estas <code>bibliotekistoj/</code>, la paĝo montriĝos ĉe <code>http://mia-retejo-omeka.org/bibliotekistoj/</code>."
+
+#: config_form.php:35
+msgid "Page title"
+msgstr "Paĝa titolo"
+
+#: config_form.php:39
+msgid "The title that will display on the librarians page and in the main site navigation."
+msgstr "La titolo, kiu montriĝos ĉe la bibliotekista paĝo kaj ĉe la ĉefa reteja menuo."
+
+#: config_form.php:47
+msgid "Pre display text"
+msgstr "Komenca teksto"
+
+#: config_form.php:51
+msgid "The text that will display before the table of librarians."
+msgstr "La teksto, kiu montriĝos antaŭ la tabelo de bibliotekistoj."
+
+#: config_form.php:59
+msgid "Post display text"
+msgstr "Fina teksto"
+
+#: config_form.php:63
+msgid "The text that will display after the table of librarians."
+msgstr "La teksto, kiu montriĝos post la tabelo de bibliotekistoj."
+
+#: HonorThyLibrarian.php:13
+msgid "Librarians"
+msgstr "Bibliotekistoj"
+
+#: HonorThyLibrarian.php:14
+msgid "The following people have contributed to this website."
+msgstr "Tiuj ĉi homoj kontribuis al tiu ĉi retejo."
+
+#: HonorThyLibrarian.php:15
+msgid "We want to thank them all very much for their help and support."
+msgstr "Ni deziras danki al ili ĉiuj pro ilia helpo kaj subteno."
+
+#: index.php:22
+msgid "Librarian"
+msgstr "Bibliotekist(in)o"
+
+#: index.php:23
+msgid "Items added/edited"
+msgstr "Dokumentoj aldonitaj/redaktitaj"
+
+#: index.php:50
+msgid "Click to see all contributions by this librarian"
+msgstr "Alklaku por vidi ĉiujn kontribuojn el tiu ĉi homo"

@@ -1,0 +1,78 @@
+# Translation for the Honor Thy Librarians plugin for Omeka.
+# Copyright (C) 2018 Daniele Binaghi
+# This file is distributed under the same license as the Omeka package.
+# Daniele Binaghi <admin@bitoteko.it>, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Honor Thy Librarians\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-08 11:54+0200\n"
+"PO-Revision-Date: 2018-05-08 12:06+0200\n"
+"Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: config_form.php:19
+msgid "Page settings"
+msgstr "Configurazione della pagina"
+
+#: config_form.php:23
+msgid "Page path"
+msgstr "Percorso della pagina"
+
+#: config_form.php:27
+msgid "The path to the page listing the librarians. For example, if your site is hosted at <code>http://my-omeka-site.org/</code>, and the value of this field is <code>librarians/</code>, then your page will be displayed at <code>http://my-omeka-site.org/librarians/</code>."
+msgstr "Il percorso della pagina che presenta la lista dei bibliotecari. Per esempio, se il sito è ospitato presso <code>http://mio-sito-omeka.org/</code>, e il valore di questo campo è <code>bibliotecari/</code>, allora la pagina verrà mostrata all'indirizzo <code>http://mio-sito-omeka.org/bibliotecari/</code>."
+
+#: config_form.php:35
+msgid "Page title"
+msgstr "Titolo della pagina"
+
+#: config_form.php:39
+msgid "The title that will display on the librarians page and in the main site navigation."
+msgstr "Il titolo che verrà mostrato nella pagina dei bibliotecari e nel menù principale del sito."
+
+#: config_form.php:47
+msgid "Pre display text"
+msgstr "Testo iniziale"
+
+#: config_form.php:51
+msgid "The text that will display before the table of librarians."
+msgstr "Il testo che verrà mostrato prima della tabella dei bibliotecari."
+
+#: config_form.php:59
+msgid "Post display text"
+msgstr "Testo finale"
+
+#: config_form.php:63
+msgid "The text that will display after the table of librarians."
+msgstr "Il testo che verrà mostrato dopo la tabella dei bibliotecari."
+
+#: HonorThyLibrarian.php:13
+msgid "Librarians"
+msgstr "Bibliotecari"
+
+#: HonorThyLibrarian.php:14
+msgid "The following people have contributed to this website."
+msgstr "Le seguenti persone hanno contribuito a questo sito web."
+
+#: HonorThyLibrarian.php:15
+msgid "We want to thank them all very much for their help and support."
+msgstr "Desideriamo ringraziarle tutte per il loro aiuto e supporto."
+
+#: index.php:22
+msgid "Librarian"
+msgstr "Bibliotecario/a"
+
+#: index.php:23
+msgid "Items added/edited"
+msgstr "Elementi aggiunti/modificati"
+
+#: index.php:50
+msgid "Click to see all contributions by this librarian"
+msgstr "Clicca per vedere tutti i contributi di questo bibliotecario"
