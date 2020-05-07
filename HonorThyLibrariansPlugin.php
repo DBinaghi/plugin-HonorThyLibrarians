@@ -57,6 +57,7 @@
 		public function hookInitialize()
 		{
 			add_translation_source(dirname(__FILE__) . '/languages');
+			add_shortcode('librarians_table', array($this, 'librariansTable'));
 		}
 
 		public function hookdefineroutes($args) {
@@ -108,6 +109,11 @@
 				'uri' => url(get_option('honor_thy_librarians_page_path'))
 				);
 			return $nav;
+		}
+		
+		public function librariansTable($args, $view)
+		{
+			return $view->librarians()->displayTable($args['args1']);
 		}
 	}
 ?>
