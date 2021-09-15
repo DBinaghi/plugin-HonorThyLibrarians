@@ -32,4 +32,4 @@ In this respect, the risks associated with loading, using, modifying and/or deve
 Copyright Daniele Binaghi, 2018-2021
 
 ## Acknowledgments
-Thanks to Lincoln A. Mullen (https://github.com/lmullen) for the original idea with his plugin HonorThyContributors (https://github.com/lmullen/plugin-HonorThyContributors)
+Thanks to Lincoln A. Mullen (https://github.com/lmullen) for the original idea with his plugin HonorThyContributors (https://github.com/lmullen/plugin-HonorThyContributors).
