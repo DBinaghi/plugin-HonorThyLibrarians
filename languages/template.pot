@@ -3,109 +3,110 @@
 # This file is distributed under the same license as the Omeka package.
 # Daniele Binaghi <admin@bitoteko.it>, 2018-2021
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Honor Thy Librarians\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: https://github.com/DBinaghi/plugin-HonorThyLibrarians/issues\n"
 "POT-Creation-Date: 2018-05-08 11:54+0200\n"
 "PO-Revision-Date: 2018-05-08 12:06+0200\n"
-"Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
-"Language-Team: Italian\n"
-"Language: it\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: config_form.php:20
 msgid "Page settings"
-msgstr "Configurazione della pagina"
+msgstr ""
 
 #: config_form.php:24
 msgid "Page path"
-msgstr "Percorso della pagina"
+msgstr ""
 
 #: config_form.php:28
 msgid "The path to the page listing the librarians. For example, if your site is hosted at <code>http://my-omeka-site.org/</code>, and the value of this field is <code>librarians/</code>, then your page will be displayed at <code>http://my-omeka-site.org/librarians/</code>."
-msgstr "Il percorso della pagina che presenta la lista dei bibliotecari. Per esempio, se il sito è ospitato presso <code>http://mio-sito-omeka.org/</code>, e il valore di questo campo è <code>bibliotecari/</code>, allora la pagina verrà mostrata all'indirizzo <code>http://mio-sito-omeka.org/bibliotecari/</code>."
+msgstr ""
 
 #: config_form.php:36
 msgid "Page title"
-msgstr "Titolo della pagina"
+msgstr ""
 
 #: config_form.php:40
 msgid "The title that will display on the librarians page and in the main site navigation."
-msgstr "Il titolo che verrà mostrato nella pagina dei bibliotecari e nel menù principale del sito."
+msgstr ""
 
 #: config_form.php:48
 msgid "Pre display text"
-msgstr "Testo iniziale"
+msgstr ""
 
 #: config_form.php:52
 msgid "The text that will display before the table of librarians."
-msgstr "Il testo che verrà mostrato prima della tabella dei bibliotecari."
+msgstr ""
 
 #: config_form.php:60
 msgid "Post display text"
-msgstr "Testo finale"
+msgstr ""
 
 #: config_form.php:64
 msgid "The text that will display after the table of librarians."
-msgstr "Il testo che verrà mostrato dopo la tabella dei bibliotecari."
+msgstr ""
 
 #: config_form.php:70
 msgid "Table settings"
-msgstr "Impostazioni tabella"
+msgstr ""
 
 #: config_form.php:74
 msgid "Sort order"
-msgstr "Ordinamento"
+msgstr ""
 
 #: config_form.php:78
 msgid "The order librarians will be sorted on."
-msgstr "L'ordine in base al quale verranno mostrati i bibliotecari."
+msgstr ""
 
 #: config_form.php:80
 msgid "Name"
-msgstr "Nome"
+msgstr ""
 
 #: config_form.php:80
 msgid "Contributions"
-msgstr "Contributi"
+msgstr ""
 
 #: config_form.php:80
 #: index.php:25
 msgid "Last contribution date"
-msgstr "Data ultimo contributo"
+msgstr ""
 
 #: config_form.php:86
 msgid "Style table with CSS"
-msgstr "Applica CSS a tabella"
+msgstr ""
 
 #: config_form.php:90
 msgid "If checked, will apply plugin css stylesheet to table."
-msgstr "Se selezionata, il foglio di stile css del plugin verrà applicato alla tabella."
+msgstr ""
 
 #: HonorThyLibrarian.php:14
 msgid "Librarians"
-msgstr "Bibliotecari"
+msgstr ""
 
 #: HonorThyLibrarian.php:15
 msgid "The following people have contributed to this website."
-msgstr "Le seguenti persone hanno contribuito a questo sito web."
+msgstr ""
 
 #: HonorThyLibrarian.php:16
 msgid "We want to thank them all very much for their help and support."
-msgstr "Desideriamo ringraziarle tutte per il loro aiuto e supporto."
+msgstr ""
 
 #: index.php:23
 msgid "Librarian"
-msgstr "Bibliotecario/a"
+msgstr ""
 
 #: index.php:24
 msgid "Items added/edited"
-msgstr "Elementi aggiunti/modificati"
+msgstr ""
 
 #: index.php:57
 msgid "Click to see all contributions by this librarian"
-msgstr "Clicca per vedere tutti i contributi di questo bibliotecario"
+msgstr ""

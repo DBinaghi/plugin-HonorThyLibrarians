@@ -80,8 +80,8 @@ msgid "Last contribution date"
 msgstr "Lasta kontribua dato"
 
 #: config_form.php:86
-msgid "Use custom CSS"
-msgstr "Uzu propran CSS"
+msgid "Style table with CSS"
+msgstr "Uzu CSS por tabelo"
 
 #: config_form.php:90
 msgid "If checked, will apply plugin css stylesheet to table."
