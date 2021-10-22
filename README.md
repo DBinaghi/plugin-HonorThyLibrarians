@@ -1,11 +1,11 @@
 # Honor Thy Librarians
 
 ## Description
-Omeka Classic plugin that creates public page to give credit to people who have added or edited items
+Creates public page to give credit to people who have added or edited Items.
 
-The page will list all librarians, with number of Items contributed and last contribution date. The page can be customized with messages before and after the table.
+The page will list all librarians, with count of Items contributed and last contribution date. The page can be customized with messages before and after the table.
 
-From version 1.1 a shortcode is available, to embed the table in any page, like f.i. one created with Simple Pages plugin.
+Starting from version 1.1 a shortcode is available to embed the table in any page (f.i., one created with Simple Pages plugin).
 The syntax to use is **[librarians_table arg1='value']**, where value is the sort order, and can be "name", "count" or "date"; "name" will be used if no value is passed.
 
 ## Installation
