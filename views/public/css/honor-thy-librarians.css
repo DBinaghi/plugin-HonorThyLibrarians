@@ -1,8 +1,9 @@
 thead {
 	border: 1px solid #E4DECE;
-	background-color: #D8CFB6; 
+	background-color: #D8CFB6;
 }
+
 tr.even {
 	border: 1px solid #E4E5DE;
-	background-color: #F3F3E7; 
+	background-color: #F3F3E7;
 }
