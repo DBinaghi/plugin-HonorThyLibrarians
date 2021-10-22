@@ -4,14 +4,14 @@
 	 * Honor Thy Librarians plugin for Omeka
 	 * 
 	 * @copyright Copyright 2013 Lincoln A. Mullen
-	 *			  Copyright 2018 Daniele Binaghi
+	 *            Copyright 2018-2021 Daniele Binaghi
 	 * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
 	 *
 	 */
 
 	// Define constants that set default options
 	define('HONOR_THY_LIBRARIANS_PAGE_PATH',	'librarians/');
-	define('HONOR_THY_LIBRARIANS_PAGE_TITLE', 	__('Librarians'));
+	define('HONOR_THY_LIBRARIANS_PAGE_TITLE',	__('Librarians'));
 	define('HONOR_THY_LIBRARIANS_PRE_TEXT',		__('The following people have contributed to this website.'));
 	define('HONOR_THY_LIBRARIANS_POST_TEXT',	__('We want to thank them all very much for their help and support.'));
 
@@ -39,9 +39,9 @@
 			set_option('honor_thy_librarians_page_path',	HONOR_THY_LIBRARIANS_PAGE_PATH);
 			set_option('honor_thy_librarians_page_title',	HONOR_THY_LIBRARIANS_PAGE_TITLE);
 			set_option('honor_thy_librarians_pre_text',		HONOR_THY_LIBRARIANS_PRE_TEXT);
-			set_option('honor_thy_librarians_post_text', 	HONOR_THY_LIBRARIANS_POST_TEXT);
-			set_option('honor_thy_librarians_sort_order', 	'name');
-			set_option('honor_thy_librarians_use_css', 		0);
+			set_option('honor_thy_librarians_post_text',	HONOR_THY_LIBRARIANS_POST_TEXT);
+			set_option('honor_thy_librarians_sort_order',	'name');
+			set_option('honor_thy_librarians_use_css',		0);
 		}
 
 		public function hookUninstall()
@@ -60,7 +60,7 @@
 			add_shortcode('librarians_table', array($this, 'librariansTable'));
 		}
 
-		public function hookdefineroutes($args) {
+		public function hookDefineRoutes($args) {
 			// Get the path to the librarians page from the options
 			$page_path = get_option('honor_thy_librarians_page_path');
 
@@ -71,12 +71,12 @@
 				new Zend_Controller_Router_Route(
 					$page_path, 
 					array(
-						'module'       => 'honor-thy-librarians',
-						'controller'   => 'index',
-						'action'       => 'index'
+						'module'		=> 'honor-thy-librarians',
+						'controller'	=> 'index',
+						'action'		=> 'index'
 					)
 				)
-			 );
+			);
 		}
 
 		public function hookConfigForm() 
@@ -107,13 +107,13 @@
 			$nav[] = array(
 				'label' => get_option('honor_thy_librarians_page_title'),
 				'uri' => url(get_option('honor_thy_librarians_page_path'))
-				);
+			);
 			return $nav;
 		}
 		
 		public function librariansTable($args, $view)
 		{
-			return $view->librarians()->displayTable($args['args1']);
+			return $view->librarians()->displayTable($args['arg1']);
 		}
 	}
 ?>
