@@ -16,11 +16,10 @@
 			return $this;
 		}
 
-		public function displayTable($args)
+		public function displayTable($orderBy)
 		{
 			$db = get_db();
-			
-			$html =  "<table id='librarians'>\n";
+			$html =  "<table class='librarians'>\n";
 			$html .= "<thead>\n";
 			$html .= "<tr>";
 			$html .= "<th>" . __('Librarian') . "</th>";
@@ -30,17 +29,18 @@
 			$html .= "</thead>\n";
 			$html .= "<tbody>\n";
 
-			$sql  = "SELECT b.id, b.name, COUNT(a.id) AS total, MAX( a.added ) AS lastdate";
+			$sql  = "SELECT b.id, b.name, COUNT(a.id) AS total, MAX(a.added) AS lastdate";
 			$sql .= " FROM " . $db->prefix . "items a";
 			$sql .= " LEFT OUTER JOIN " . $db->prefix . "users b";
 			$sql .= " ON a.owner_id = b.id";
 			$sql .= " GROUP BY b.id";
-			if ($args['arg'] == 'count') {
-				$sql .= " ORDER BY total DESC, b.name ASC";
-			} elseif ($args['arg1'] == 'date') {
-				$sql .= " ORDER BY lastdate DESC, b.name ASC";
+			$sql .= " ORDER BY";
+			if ($orderBy == 'count') {
+				$sql .= " total DESC, b.name ASC";
+			} elseif ($orderBy == 'date') {
+				$sql .= " lastdate DESC, b.name ASC";
 			} else {
-				$sql .= " ORDER BY b.name";
+				$sql .= " b.name";
 			}
 
 			$librarians = $db->query($sql)->fetchall();
