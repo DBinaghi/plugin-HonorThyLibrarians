@@ -14,11 +14,21 @@ echo head(); ?>
 	<?php 
 		echo "<h1>" . __(get_option('honor_thy_librarians_page_title')) . "</h1>";
 
-		echo "<p>" . get_option('honor_thy_librarians_pre_text') . "</p>";
-		
+        $preText = get_option('honor_thy_librarians_pre_text');
+        if ($preText != '' && $preText != HONOR_THY_LIBRARIANS_PRE_TEXT) {
+    		echo "<p>" . $preText . "</p>";
+        } else {
+            echo "<p>" . __(HONOR_THY_LIBRARIANS_PRE_TEXT) . "</p>";
+        }
+        
 		echo $this->librarians()->displayTable(array(get_option('honor_thy_librarians_sort_order')));
 		
-		echo "<p>" . get_option('honor_thy_librarians_post_text') . "</p>";
+        $postText = get_option('honor_thy_librarians_post_text');
+        if ($postText != '' && $postText != HONOR_THY_LIBRARIANS_POST_TEXT) {
+    		echo "<p>" . $postText . "</p>";
+        } else {
+            echo "<p>" . __(HONOR_THY_LIBRARIANS_POST_TEXT) . "</p>";
+        }
 	?> 
 </div>
 
