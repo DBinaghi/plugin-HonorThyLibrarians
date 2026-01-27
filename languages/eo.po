@@ -92,8 +92,8 @@ msgid "Librarians"
 msgstr "Bibliotekistoj"
 
 #: HonorThyLibrarian.php:15
-msgid "The following people have contributed to this website."
-msgstr "Tiuj ĉi homoj kontribuis al tiu ĉi retejo."
+msgid "The following people have enrichened this website with their contributions, adding or editing items and/or files."
+msgstr "La jenaj homoj riĉigis tiun ĉi retejon per iliaj kontribuoj, aldonante aŭ redaktante erojn kaj/aŭ dosierojn.
 
 #: HonorThyLibrarian.php:16
 msgid "We want to thank them all very much for their help and support."

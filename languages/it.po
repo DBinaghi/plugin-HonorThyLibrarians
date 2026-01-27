@@ -9,6 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 11:54+0200\n"
 "PO-Revision-Date: 2018-05-08 12:06+0200\n"
+"PO-Revision-Date: 2026-01-27 02:06+0200\n"
 "Last-Translator: Daniele Binaghi <admin@bitoteko.it>\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -91,8 +92,8 @@ msgid "Librarians"
 msgstr "Bibliotecari"
 
 #: HonorThyLibrarian.php:15
-msgid "The following people have contributed to this website."
-msgstr "Le seguenti persone hanno contribuito a questo sito web."
+msgid "The following people have enrichened this website with their contributions, adding or editing items and/or files."
+msgstr "Le seguenti persone hanno arricchito questo sito web con i loro contributi, aggiungendo o modificando documenti e/o file."
 
 #: HonorThyLibrarian.php:16
 msgid "We want to thank them all very much for their help and support."
