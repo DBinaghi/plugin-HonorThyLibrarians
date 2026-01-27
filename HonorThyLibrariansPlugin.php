@@ -12,7 +12,7 @@
 	// Define constants that set default options
 	define('HONOR_THY_LIBRARIANS_PAGE_PATH',	'librarians/');
 	define('HONOR_THY_LIBRARIANS_PAGE_TITLE',	__('Librarians'));
-	define('HONOR_THY_LIBRARIANS_PRE_TEXT',		__('The following people have contributed to this website.'));
+	define('HONOR_THY_LIBRARIANS_PRE_TEXT',		__('The following people have enrichened this website with their contributions, adding or editing items and files.'));
 	define('HONOR_THY_LIBRARIANS_POST_TEXT',	__('We want to thank them all very much for their help and support.'));
 
 	class HonorThyLibrariansPlugin extends Omeka_Plugin_AbstractPlugin
@@ -117,3 +117,4 @@
 		}
 	}
 ?>
+
